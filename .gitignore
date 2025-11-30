@@ -2,3 +2,5 @@ node_modules/
 dist/
 .env
 datasets/
+saved_model/
+pnpm-lock.yaml

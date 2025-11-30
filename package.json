@@ -20,7 +20,8 @@
   "dependencies": {
     "@tensorflow/tfjs": "^4.22.0",
     "@tensorflow/tfjs-core": "^4.22.0",
-    "tensorflow-helpers": "^1.5.2"
+    "sharp": "^0.34.5",
+    "tensorflow-helpers": "1.5.2-cpu"
   },
   "overrides": {
     "@tensorflow/tfjs-node": "npm:@tensorflow/tfjs@^4.22.0"
