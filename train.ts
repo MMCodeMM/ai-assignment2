@@ -19,17 +19,17 @@ async function main() {
   // Create classifier for image classification
   let classifier = await loadImageClassifierModel({
     baseModel,
-    modelDir: 'saved_model/classifier_model',
+    modelDir: 'saved_model/gender_classifier_model',
     hiddenLayers: [128],
-    datasetDir: 'dataset',
+    datasetDir: 'datasets/gender',
     classNames: ['MaineCoon', 'PersianCat', 'others','SiameseCat'], // auto scan from datasetDir
   })
 
   // auto load training dataset
-  // let history = await classifier.train({
-  //   epochs: 5,
-  //   batchSize: 32,
-  // })
+  let history = await classifier.train({
+    epochs: 10,
+    batchSize: 150,
+   })
 
   // persist the parameters across restart
   await classifier.save()
