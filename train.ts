@@ -22,7 +22,7 @@ async function main() {
     modelDir: 'saved_model/classifier_model',
     hiddenLayers: [128],
     datasetDir: 'dataset',
-    // classNames: ['anime', 'real', 'others'], // auto scan from datasetDir
+    classNames: ['MaineCoon', 'PersianCat', 'others','SiameseCat'], // auto scan from datasetDir
   })
 
   // auto load training dataset
